@@ -31,9 +31,11 @@ ssh core@<node>
 sudo su -
 
 # Disable all repos before upgrading the cluster from 4.5 to 4.6.
-sudo grep enabled=1 /etc/yum.repos.d/*
-sudo find /etc/yum.repos.d/ -type f -exec sudo sed -i 's/enabled=1/enabled=0/g' {} +
-sudo grep enabled=1 /etc/yum.repos.d/*
+grep enabled=1 /etc/yum.repos.d/*
+find /etc/yum.repos.d/ -type f -exec sudo sed -i 's/enabled=1/enabled=0/g' {} +
+grep enabled=1 /etc/yum.repos.d/*
+
+reboot
 ```
 
 Afterwards you should be able to upgrade.
