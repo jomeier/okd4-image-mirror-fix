@@ -8,6 +8,8 @@ REPO_OKD_RELEASE=quay.io/openshift/okd:4.6.0-0.okd-2021-01-23-132511
 # A repository where the fixed images will be stored.
 REPO_MIRROR=quay.io/<YOUR NAME>/okd
 
+REPO_FINAL_MIRROR=quay.io/<YOUR NAME>/okd-mirror
+
 # 
 TAG=4.6.0-0.okd-2021-01-23-132511
 
