@@ -1,5 +1,7 @@
 # okd4-image-mirror-fix
 
+THIS FIX IS NOT SUPPOSED TO BE USED ON OKD 4.7+ !!!
+
 ## Prerequisite
 * install the oc client
 * install skopeo
